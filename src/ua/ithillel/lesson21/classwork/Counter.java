@@ -1,4 +1,4 @@
-package ua.ithillil.classwork;
+package ua.ithillel.lesson21.classwork;
 
 public interface Counter {
     int getVal();

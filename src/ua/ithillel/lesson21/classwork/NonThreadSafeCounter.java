@@ -1,4 +1,4 @@
-package ua.ithillil.classwork;
+package ua.ithillel.lesson21.classwork;
 
 public class NonThreadSafeCounter implements Counter {
     private int val;
