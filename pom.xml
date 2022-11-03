@@ -19,6 +19,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <version.org.projectlombok>1.18.24</version.org.projectlombok>
         <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.org.apache.logging.log4j>2.7</version.org.apache.logging.log4j>
     </properties>
 
     <dependencies>
@@ -39,6 +40,11 @@
             <artifactId>junit-jupiter-params</artifactId>
             <version>${version.org.junit.jupiter}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${version.org.apache.logging.log4j}</version>
         </dependency>
     </dependencies>
 
