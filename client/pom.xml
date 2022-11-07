@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ua.ithillel</groupId>
-    <artifactId>ith-62aaf5f907905d280bc0679e</artifactId>
+    <groupId>ua.ithillel.ith-62aaf5f907905d280bc0679e.client</groupId>
+    <artifactId>application</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>Hillel IT School Project</name>
+    <name>Hillel IT School Client Project</name>
     <description>Hillel IT School Project of the group ith-62aaf5f907905d280bc0679e</description>
     <organization>
         <name>Hillel IT School</name>
@@ -19,6 +19,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <version.org.projectlombok>1.18.24</version.org.projectlombok>
         <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.org.apache.logging.log4j>2.7</version.org.apache.logging.log4j>
     </properties>
 
     <dependencies>
@@ -40,6 +41,10 @@
             <version>${version.org.junit.jupiter}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${version.org.apache.logging.log4j}</version>
+        </dependency>
     </dependencies>
-
 </project>
