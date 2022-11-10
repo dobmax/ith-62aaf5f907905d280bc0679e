@@ -11,14 +11,26 @@
     <description>Hillel IT School Project of the group ith-62aaf5f907905d280bc0679e</description>
     <organization>
         <name>Hillel IT School</name>
-        <url>https://ithillel.ua/</url>
+        <url>https://github.com/dobmax/ith-62aaf5f907905d280bc0679e</url>
     </organization>
+    <developers>
+        <developer>
+            <name>Maks Dobrynin</name>
+            <roles>
+                <role>Teacher-developer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
+        <full.name>Maks_Dobrynin</full.name>
+
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <version.org.projectlombok>1.18.24</version.org.projectlombok>
         <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.maven-surefire-plugin>3.0.0-M7</version.maven-surefire-plugin>
     </properties>
 
     <dependencies>
@@ -42,4 +54,15 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>${artifactId}-${full.name}-${version}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${version.maven-surefire-plugin}</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
