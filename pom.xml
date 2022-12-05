@@ -21,13 +21,16 @@
         <maven.compiler.target>17</maven.compiler.target>
         <version.org.projectlombok>1.18.24</version.org.projectlombok>
         <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.jakarta.servlet>6.0.0</version.jakarta.servlet>
+        <version.maven.surefire.plugin>3.0.0-M7</version.maven.surefire.plugin>
+        <version.maven.war.plugin>3.3.2</version.maven.war.plugin>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>${version.jakarta.servlet}</version>
         </dependency>
 
         <dependency>
@@ -54,11 +57,11 @@
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>${version.maven.surefire.plugin}</version>
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>${version.maven.war.plugin}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
