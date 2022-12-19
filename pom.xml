@@ -19,9 +19,16 @@
         <maven.compiler.target>17</maven.compiler.target>
         <version.org.projectlombok>1.18.24</version.org.projectlombok>
         <version.org.junit.jupiter>5.9.1</version.org.junit.jupiter>
+        <version.org.springframework>6.0.3</version.org.springframework>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.org.springframework}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
