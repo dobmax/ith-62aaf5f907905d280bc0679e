@@ -6,21 +6,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import ua.ithillel.lesson42.classwork.dataaccess.entity.Student;
-import ua.ithillel.lesson42.classwork.dataaccess.service.StudentService;
+import ua.ithillel.lesson42.classwork.dataaccess.repository.StudentRepository;
 
 @Controller
 @RequestMapping("/students")
 public class StudentController {
 
-    private final StudentService studentService;
+    private final StudentRepository studentRepository;
 
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
+    public StudentController(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
     }
 
     @RequestMapping(path = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Student findById(@PathVariable long id) {
-        return studentService.findById(1L).orElse(null);
+        return studentRepository.findById(1L).orElse(null);
     }
 }
